@@ -1,0 +1,887 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+Inzagi Group | Real Estate, HR Consultancy, Legal & NGO Services
+</title>
+
+<meta name="description"
+content="Inzagi Group delivers integrated solutions across Real Estate, HR Consultancy, Legal Services, NGO initiatives, and Job Portals in India.">
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel = "stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/common.css' %}">
+<link rel ="stylesheet" href="{% static 'css/cta.css' %}">
+<link rel="stylesheet" href="{% static 'css/banner.css' %}">
+
+<link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
+
+<link rel="icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+
+{% block css %} {% endblock %}
+
+
+</head>
+<body>
+
+<!-- ================= HEADER START ================= -->
+
+<header class="header-mg">
+
+  <div class="nav-container-mg">
+
+    <!-- LOGO -->
+    <div class="logo-mg">
+      <a href="{% url 'index' %}">
+        <img src="{% static 'images/logo.png' %}" alt="logo">
+      </a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="nav-menu-mg" id="navMenuMg">
+
+      <!-- HOME -->
+      <a href="{% url 'index' %}">
+        <div class="nav-item-mg">
+          Home
+        </div>
+      </a>
+
+
+
+
+
+      <!-- BUSINESSES -->
+      <div class="nav_dropdown_wrapper_mg">
+
+        <a href="{% url 'industries' %}" class="nav_dropdown_trigger_mg">
+
+          <div class="nav-item-mg dropdown_nav_item_mg">
+            Businesses
+
+            <span class="dropdown_icon_mg">
+              ˅
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- DROPDOWN -->
+        <div class="enterprise_dropdown_mg">
+
+          <div class="enterprise_dropdown_container_mg">
+
+            <div class="enterprise_dropdown_col_mg">
+
+              <a href="{% url 'industries_section' 'industries_banner' %}"></a>
+
+              <a href="{% url 'industries_section' 'Industries-We-Serve' %}">
+                Industries We Serve
+              </a>
+
+              <a href="{% url 'industries_section' 'Industries' %}">
+                Industries
+              </a>
+
+              <a href="{% url 'industries_section' 'Case-Studies' %}">
+                Case Studies
+              </a>
+
+              
+
+              <a href="{% url 'industries_section' 'Our-Impact' %}">
+                Our Impact
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      
+
+
+
+
+      <!-- ABOUT -->
+      <div class="nav_dropdown_wrapper_mg">
+
+        <a href="{% url 'about_section' 'about_banner' %}" class="nav_dropdown_trigger_mg">
+
+          <div class="nav-item-mg dropdown_nav_item_mg">
+
+            About Us
+
+            <span class="dropdown_icon_mg">
+              ˅
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- DROPDOWN -->
+        <div class="enterprise_dropdown_mg">
+
+          <div class="enterprise_dropdown_container_mg">
+
+            <!-- COL -->
+            <div class="enterprise_dropdown_col_mg">
+
+              <a href="{% url 'about_section' 'about_banner' %}"></a>
+
+              <a href="{% url 'about_section' 'overview' %}">
+                Overview
+              </a>
+
+              
+
+              
+
+              <a href="{% url 'about_section' 'vision' %}">
+                Vision & Mission
+              </a>
+
+              <a href="{% url 'about_section' 'achievements' %}">
+                Achievements
+              </a>
+
+            </div>
+
+            <!-- COL -->
+            <div class="enterprise_dropdown_col_mg">
+
+              <a href="{% url 'about_section' 'our-story' %}">
+                Our Story
+              </a>
+
+              <a href="{% url 'about_section' 'csr' %}">
+                CSR Activities
+              </a>
+
+            </div>
+
+            <!-- COL -->
+            <div class="enterprise_dropdown_col_mg">
+
+              <a href="{% url 'terms' %} ">
+                Terms & Conditions
+              </a>
+
+              <a href="{% url 'legal_disclaimer' %}">
+                Legal Disclaimer
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+      <!-- FOUNDATION -->
+      <div class="nav_dropdown_wrapper_mg">
+
+        <a href="{% url 'foundation' %}" class="nav_dropdown_trigger_mg">
+
+          <div class="nav-item-mg dropdown_nav_item_mg">
+
+            Foundation
+
+            <span class="dropdown_icon_mg">
+              ˅
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- DROPDOWN -->
+        <div class="enterprise_dropdown_mg">
+
+          <div class="enterprise_dropdown_container_mg">
+
+            <div class="enterprise_dropdown_col_mg">
+
+              <a href="{% url 'foundation_section' 'about-foundation' %}">
+                About Foundation
+              </a>
+
+              <a href="{% url 'foundation_section' 'focus-area' %}">
+                Focus Areas
+              </a>
+
+
+              <a href="{% url 'foundation_section' 'impact-achievements' %}">
+                Impact Achievements
+              </a>
+
+              <a href="{% url 'foundation_section' 'join-mission' %}">
+                Join The Mission
+              </a>
+
+              <a href="{% url 'foundation_section' 'voice-impact' %}">
+                Voice of Impact
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <!-- BLOG -->
+      <div class="nav_dropdown_wrapper_mg">
+
+        <a href="{% url 'blog' %}" class="nav_dropdown_trigger_mg">
+
+          <div class="nav-item-mg dropdown_nav_item_mg">
+
+            Blog
+
+            <span class="dropdown_icon_mg">
+              ˅
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- DROPDOWN -->
+        <div class="enterprise_dropdown_mg">
+
+          <div class="enterprise_dropdown_container_mg">
+
+            <div class="enterprise_dropdown_col_mg">
+
+              <a href="{% url 'blog_section' 'featured-article' %}">
+                Featured Article
+              </a>
+
+              <a href="{% url 'blog_section' 'latest-articles' %}">
+                Latest Articles
+              </a>
+
+              <a href="{% url 'blog_section' 'trending-insights' %}">
+                Trending Insights
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CAREERS -->
+      <div class="nav_dropdown_wrapper_mg">
+
+        <a href="{% url 'career' %}" class="nav_dropdown_trigger_mg">
+
+          <div class="nav-item-mg dropdown_nav_item_mg">
+
+            Careers
+
+            <span class="dropdown_icon_mg">
+              ˅
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- DROPDOWN -->
+        <div class="enterprise_dropdown_mg">
+
+          <div class="enterprise_dropdown_container_mg">
+
+            <!-- COL -->
+            <div class="enterprise_dropdown_col_mg">
+
+              <a href="{% url 'career_section' 'Why-Join-Us' %}">
+                Why Join Us
+              </a>
+
+              <a href="{% url 'career_section' 'Our-Work-Culture' %}">
+                Our Work Culture
+              </a>
+
+              <a href="{% url 'career_section' 'Employee-Experiences' %}">
+                Employee Experiences
+              </a>
+
+              
+
+            </div>
+
+            <!-- COL -->
+            <div class="enterprise_dropdown_col_mg">
+
+              <a href="{% url 'career_section' 'Open-Positions' %}">
+                Open Positions
+              </a>
+
+
+              <a href="{% url 'career_section' 'Hiring-Process' %}">
+                Hiring Process
+              </a>
+
+              
+
+              
+
+              <a href="{% url 'career_section' 'Benefits-Perks' %}">
+                Benefits & Perks
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!-- CONTACT -->
+      <a href="{% url 'contact' %}">
+        <div class="nav-item-mg">
+          Contact Us
+        </div>
+      </a>
+
+    </nav>
+
+    <!-- RIGHT -->
+    <div class="nav-right-mg">
+
+      <button class="demo-btn-mg" onclick="openPopupMg()">
+        Get Demo
+      </button>
+
+      <div class="hamburger-mg" onclick="toggleMenuMg()">
+        ☰
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- ================= HEADER END ================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const section = "{{ active_section|default:'' }}";
+
+    const target = document.getElementById(section);
+
+    const header = document.querySelector(".header-mg");
+
+    if(target && header){
+
+        const headerOffset = header.offsetHeight + 30;
+
+        const elementPosition =
+            target.getBoundingClientRect().top;
+
+        const offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+
+    }
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function openMegaMg() {
+  const mega = document.getElementById("megaMg");
+  mega.style.display =
+    mega.style.display === "block" ? "none" : "block";
+}
+
+function toggleMenuMg() {
+  document.getElementById("navMenuMg")
+    .classList.toggle("active-mg");
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form class="popup_form_mg" id="demoFormMg">
+<div class="popup_overlay_mg" id="popupOverlayMg">
+
+  <div class="popup_box_mg">
+
+    <span class="popup_close_mg" onclick="closePopupMg()">×</span>
+
+    <h2 class="popup_title_mg">Request a Demo</h2>
+
+    
+
+    
+      {% csrf_token %}
+
+      <div class="input_box_mg">
+        <input type="text" name="name" required>
+        <label>Full Name</label>
+      </div>
+      <input type="hidden" name="page_url" id="page_url">
+
+      <div class="input_box_mg">
+        <input type="email" name="email" required>
+        <label>Email Address</label>
+      </div>
+
+      <div class="input_box_mg">
+        <input type="text" name="phone" required>
+        <label>Phone Number</label>
+      </div>
+
+      <div class="input_box_mg">
+        <input type="text" name="company" required>
+        <label>Company Name</label>
+      </div>
+
+      <div class="input_box_mg">
+        <select name="service" required>
+          <option value="" disabled selected></option>
+          <option>Real Estate</option>
+          <option>HR Consultancy</option>
+          <option>Legal Services</option>
+          <option>NGO</option>
+          <option>Job Portal</option>
+        </select>
+        <label>Select Service</label>
+      </div>
+
+      <div class="input_box_mg">
+        <textarea name="message" rows="3" required></textarea>
+        <label>Your Requirement</label>
+      </div>
+
+      <button type="submit" class="submit_btn_mg" id="demoSubmitBtnMg">Submit Request</button>
+
+    
+
+  </div>
+
+</div>
+</form>
+
+
+
+
+<script>
+
+let isSubmittingMg = false;
+
+document.getElementById("demoFormMg")
+.addEventListener("submit", function(e) {
+
+
+
+    e.preventDefault();
+
+
+    // ==========================================
+    // PREVENT MULTIPLE SUBMIT
+    // ==========================================
+
+    if(isSubmittingMg) {
+        return;
+    }
+
+    isSubmittingMg = true;
+
+
+    // ==========================================
+    // ELEMENTS
+    // ==========================================
+
+    const form = this;
+
+    const submitBtn =
+        document.getElementById("demoSubmitBtnMg");
+
+
+    // ==========================================
+    // BUTTON LOADING
+    // ==========================================
+
+    submitBtn.disabled = true;
+
+    submitBtn.innerText = "Submitting...";
+
+
+    // ==========================================
+    // CURRENT PAGE URL
+    // ==========================================
+
+    document.getElementById("page_url").value =
+        window.location.href;
+
+
+    // ==========================================
+    // FORM DATA
+    // ==========================================
+
+    let formData = new FormData(form);
+
+
+    // ==========================================
+    // FETCH REQUEST
+    // ==========================================
+
+    fetch("{% url 'save_demo_request' %}", {
+
+        method: "POST",
+
+        headers: {
+
+            "X-CSRFToken":
+            document.querySelector('[name=csrfmiddlewaretoken]').value
+        },
+
+        body: formData
+    })
+
+
+    .then(response => response.json())
+
+
+    .then(data => {
+
+        if(data.status === "success") {
+
+            alert("✅ Request Submitted Successfully!");
+
+            form.reset();
+
+            closePopupMg();
+
+        } else {
+
+            alert("❌ " + data.message);
+        }
+
+    })
+
+
+    .catch(error => {
+
+        console.log(error);
+
+        alert("Something went wrong!");
+
+    })
+
+
+    .finally(() => {
+
+        // ==========================================
+        // RESET BUTTON
+        // ==========================================
+
+        isSubmittingMg = false;
+
+        submitBtn.disabled = false;
+
+        submitBtn.innerText = "Submit Request";
+
+    });
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function openPopupMg() {
+  document.getElementById("popupOverlayMg").style.display = "flex";
+}
+
+function closePopupMg() {
+  document.getElementById("popupOverlayMg").style.display = "none";
+}
+
+window.addEventListener("click", function(e) {
+  const overlay = document.getElementById("popupOverlayMg");
+  if (e.target === overlay) {
+    closePopupMg();
+  }
+});
+</script>
+
+
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-mg">
+  <div class="footer-container-mg">
+
+    <div class="footer-grid-mg">
+
+      <div class="footer-col-mg">
+        <h4>Quick Links</h4>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'industries' %}">Industries</a>
+        <a href="{% url 'about_section' 'overview' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'office_form' %}">Office Contact Form</a>
+        <a href="{% url 'career' %}">Career</a>
+      </div>
+
+      <div class="footer-col-mg">
+        <h4>Our Companies</h4>
+        <a href="#">MG Group</a>
+        <a href="#">MG Properties</a>
+        <a href="#">MG Consultancy</a>
+        <a href="#">MG NGO</a>
+        <a href="#">MG Jobs</a>
+      </div>
+
+      <div class="footer-col-mg">
+        <h4>Contact Us</h4>
+        <a href="#">+91 63-88-490-245</a>
+        <a href="#">mukesh638899@gmail.com</a>
+        <a href="#">Noida, Uttar Pradesh</a>
+        <a href="#">Support Center</a>
+      </div>
+
+      <div class="footer-col-mg">
+        <h4>Our Services</h4>
+        <a href="#">Real Estate Solutions</a>
+        <a href="#">HR Consultancy</a>
+        <a href="#">Legal Services</a>
+        <a href="#">NGO Initiatives</a>
+        <a href="#">Job Portal</a>
+      </div>
+
+      <div class="footer-col-mg">
+        <h4>Resources</h4>
+        <a href="{% url 'career' %}">Careers</a>
+        <a href="#">Blogs</a>
+        <a href="#">Case Studies</a>
+        <a href="#">FAQs</a>
+        <a href="#">Support</a>
+      </div>
+
+      <div class="footer-col-mg">
+        <h4>Company</h4>
+        <a href="{% url 'about_section' 'overview' %}">About Us</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+        <a href="{% url 'career' %}">Careers</a>
+        <a href="{% url 'legal_disclaimer' %}">Legal Disclaimer</a>
+        <a href="{% url 'terms' %}">Terms & Conditions</a>
+      </div>
+
+    </div>
+
+    <div class="footer-divider-mg"></div>
+
+    <div class="footer-bottom-mg">
+
+      <div class="footer-left-mg">
+        MG-GROUP Pvt. Ltd.
+      </div>
+
+      <div class="footer-links-mg">
+        <a href="{% url 'legal_disclaimer' %}">Legal Disclaimer</a>
+        <a href="{% url 'terms' %}">Terms & Conditions</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'index' %}">© 2026 MG Group</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script src="{% static 'js/cards.js' %}"></script>
+
+</body>
+</html>

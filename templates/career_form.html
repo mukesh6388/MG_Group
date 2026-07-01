@@ -1,0 +1,169 @@
+{% load static %}
+{% block title %} {% endblock %}
+{% block css %} 
+<link rel="stylesheet" href="{% static 'css/career_form.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- ===== ULTRA PREMIUM GLASSMORPHISM CAREER FORM START ===== -->
+
+<section class="elite_career_apply_main_mg">
+
+  <!-- BACKGROUND -->
+  <div class="elite_blur_1_mg"></div>
+  <div class="elite_blur_2_mg"></div>
+
+  <div class="elite_career_container_mg">
+
+    <!-- CARD -->
+    <div class="elite_career_card_mg">
+
+      <!-- TOP -->
+      <div class="elite_career_top_mg">
+
+        <div class="elite_career_title_mg">
+
+          <span>
+            CAREER APPLICATION
+          </span>
+
+          <h2>
+            {{ job.title }}
+          </h2>
+
+          <p>
+            {{ job.category.name }}
+          </p>
+
+        </div>
+
+        <div class="elite_job_badge_mg">
+
+          Explore More
+
+        </div>
+
+      </div>
+
+      <!-- FORM -->
+      <form class="elite_career_form_mg" method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        <!-- NAME -->
+        <div class="elite_input_box_mg">
+
+          <input type="text" name="full_name" required>
+
+          <label>
+            Full Name
+          </label>
+
+        </div>
+
+        <!-- EMAIL -->
+        <div class="elite_input_box_mg">
+
+          <input type="email" name="email" required>
+
+          <label>
+            Email Address
+          </label>
+
+        </div>
+
+        <!-- PHONE -->
+        <div class="elite_input_box_mg">
+
+          <input type="text" name="phone" required>
+
+          <label>
+            Phone Number
+          </label>
+
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="elite_input_box_mg">
+
+          <select name="experience" required>
+
+            <option value="" disabled selected></option>
+
+            <option>Fresher</option>
+            <option>1–2 Years</option>
+            <option>2–5 Years</option>
+
+          </select>
+
+          <label>
+            Experience
+          </label>
+
+        </div>
+
+        <!-- LOCATION -->
+        <div class="elite_input_box_mg">
+
+          <input type="text" name="location" required>
+
+          <label>
+            Current Location
+          </label>
+
+        </div>
+
+        <!-- CTC -->
+        <div class="elite_input_box_mg">
+
+          <input type="text" name="expected_ctc" required>
+
+          <label>
+            Expected CTC
+          </label>
+
+        </div>
+
+        <!-- SKILLS -->
+        <div class="elite_input_box_mg elite_full_mg">
+
+          <textarea name="skills" required></textarea>
+
+          <label>
+            Skills / Short Introduction
+          </label>
+
+        </div>
+
+        <!-- RESUME -->
+        <div class="elite_resume_box_mg">
+
+          <label>
+
+            Upload Resume
+
+            <input type="file" name="resume" required>
+
+          </label>
+
+        </div>
+
+        <!-- BUTTON -->
+        <button type="submit" class="elite_submit_btn_mg">
+
+          Submit Application
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===== ULTRA PREMIUM GLASSMORPHISM CAREER FORM END ===== -->
+
+
+{% endblock %}

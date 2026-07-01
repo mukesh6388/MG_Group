@@ -1,0 +1,1291 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Inzagi Group | Real Estate, HR Consultancy, Legal & NGO Services
+{% endblock %}
+
+{% block description %}
+Inzagi Group delivers integrated solutions across Real Estate, HR Consultancy, Legal Services, NGO initiatives, and Job Portals in India.
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+{% block content %}
+
+
+
+
+<section class="mg-hero-sec">
+
+  <!-- SLIDES -->
+  <div class="mg-hero-slide active"
+    data-title="Empowering Multiple <br> Industries With One Vision"
+    data-text="From Real Estate and HR Consultancy to Legal Services, NGO initiatives, and Job Portals — we deliver powerful solutions that help businesses grow faster and smarter."
+    style="background-image: url({% static 'images/real-estate-home.png' %});">
+  </div>
+
+
+
+  <div class="mg-hero-slide"
+    data-title="Building Strong Business <br> Ecosystems"
+    data-text="We connect technology, strategy, and execution to help your business grow faster with smart and reliable solutions."
+    style="background-image: url({% static 'images/hr-consultancy-home.png' %});">
+  </div>
+
+
+
+  <div class="mg-hero-slide"
+    data-title="Innovating Across <br> Multiple Industries"
+    data-text="Our expertise spans across multiple sectors, delivering scalable and efficient solutions designed for your needs."
+    style="background-image: url({% static 'images/ngo-banner.png' %});">
+  </div>
+
+  <!-- Overlay -->
+  <div class="mg-hero-overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="mg-hero-container-mg">
+    <div class="mg-hero-left-mg">
+
+      <h1 class="mg-hero-title-mg"></h1>
+
+      <p class="mg-hero-subtext-mg"></p>
+
+      <div class="mg-hero-btn-group-mg">
+        <a href="#" class="mg-hero-btn-primary-mg">Explore Companies →</a>
+        <a href="#" class="mg-hero-btn-outline-mg" onclick="openPopupMg()">Contact Us</a>
+      </div>
+
+      <div class="mg-hero-badges-mg">
+        <div class="mg-badge-mg">Trusted by 10K+ Clients</div>
+        <div class="mg-badge-mg">Multi Industry Platform</div>
+        <div class="mg-badge-mg">Enterprise Solutions</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DOTS -->
+  <div class="mg-hero-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</section>
+
+
+
+<script>
+const slides = document.querySelectorAll(".mg-hero-slide");
+const dots = document.querySelectorAll(".dot");
+const title = document.querySelector(".mg-hero-title-mg");
+const text = document.querySelector(".mg-hero-subtext-mg");
+
+let index = 0;
+
+// SET CONTENT
+function updateContent(i){
+  title.innerHTML = slides[i].dataset.title;
+  text.innerHTML = slides[i].dataset.text;
+}
+
+// SHOW SLIDE
+function showSlide(i){
+  slides.forEach(s => s.classList.remove("active"));
+  dots.forEach(d => d.classList.remove("active"));
+
+  slides[i].classList.add("active");
+  dots[i].classList.add("active");
+
+  updateContent(i);
+}
+
+// AUTO SLIDE
+function autoSlide(){
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+// DOT CLICK
+dots.forEach((dot, i)=>{
+  dot.addEventListener("click", ()=>{
+    index = i;
+    showSlide(index);
+  });
+});
+
+// INIT
+showSlide(index);
+setInterval(autoSlide, 11000);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about_short_main_mg">
+  <div class="about_short_container_mg">
+
+    <!-- LEFT CONTENT -->
+    <div class="about_short_left_mg">
+      <h2 class="about_short_title_mg">
+        Delivering Excellence Across Multiple Industries
+      </h2>
+
+      <p class="about_short_desc_mg">
+        We are a multi-industry group delivering integrated solutions across Real Estate, HR Consultancy, Legal Services, NGO initiatives, and Job Portals. Our focus is to simplify operations, create opportunities, and drive consistent growth for businesses and communities.
+      </p>
+
+      <p class="about_short_desc_mg">
+        With a strong foundation of trust, innovation, and expertise, we bring together diverse domains under one unified vision — enabling organizations to scale efficiently and succeed in a competitive market.
+      </p>
+
+      <a href="#" class="about_short_btn_mg">Explore More →</a>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="about_short_right_mg">
+      <img src="{% static 'images/home-page-intro.jpg' %}" alt="About Image">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== OUR COMPANIES SECTION START ===== -->
+<section class="companies_main_mg">
+
+  <div class="companies_container_mg">
+
+    <!-- Section Heading -->
+    <div class="companies_header_mg">
+      <h2 class="companies_title_mg">Our Group Companies</h2>
+      <p class="companies_subtitle_mg">
+        Delivering expert solutions across diverse industries through one unified platform.
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="companies_grid_mg">
+
+      <!-- Card 1 -->
+      <div class="company_card_mg">
+        <img src="{% static 'images/real-eastate-home.png' %}" alt="Real Estate">
+        <h3>Real Estate</h3>
+        <p>Complete property solutions including buying, selling, leasing, and investment guidance.</p>
+        <a href="#">View More →</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="company_card_mg">
+        <img src="{% static 'images/hr-consultancy-group.png' %}" alt="HR Consultancy">
+        <h3>HR Consultancy</h3>
+        <p>End-to-end recruitment, talent management, and workforce solutions for growing businesses.</p>
+        <a href="#">View More →</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="company_card_mg">
+        <img src="{% static 'images/ngo-group.png' %}" alt="NGO">
+        <h3>NGO</h3>
+        <p>Driving social impact through community initiatives, education, and sustainable development efforts.</p>
+        <a href="#">View More →</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="company_card_mg">
+        <img src="{% static 'images/law-firm-group.png' %}" alt="Law Firm">
+        <h3>Law Firm</h3>
+        <p>Professional legal services including advisory, documentation, and litigation assistance.</p>
+        <a href="#">View More →</a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="company_card_mg">
+        <img src="{% static 'images/job-portal-group.png' %}" alt="Job Portal">
+        <h3>Job Portal</h3>
+        <p>Connecting employers and candidates through smart hiring platforms and career solutions.</p>
+        <a href="#">View More →</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== OUR COMPANIES SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== SERVICES SECTION START ===== -->
+<section class="services_main_mg">
+
+  <div class="services_container_mg">
+
+    <!-- Section Header -->
+    <div class="services_header_mg">
+      <h2 class="services_title_mg">Integrated Services Across Industries</h2>
+      <p class="services_subtitle_mg">
+        Delivering reliable and scalable solutions tailored for modern business needs.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services_grid_mg">
+
+      <!-- Card -->
+      <div class="service_card_mg">
+        <div class="service_icon_box_mg">🏢</div>
+        <h3>Property Solutions</h3>
+        <p>Complete real estate services from acquisition to investment management.</p>
+        <span class="service_arrow_mg">→</span>
+      </div>
+
+      <div class="service_card_mg">
+        <div class="service_icon_box_mg">👥</div>
+        <h3>Recruitment</h3>
+        <p>Smart hiring solutions designed to connect top talent with growing businesses.</p>
+        <span class="service_arrow_mg">→</span>
+      </div>
+
+      <div class="service_card_mg">
+        <div class="service_icon_box_mg">⚖️</div>
+        <h3>Legal Advisory</h3>
+        <p>Reliable legal consultation and compliance support for businesses and clients.</p>
+        <span class="service_arrow_mg">→</span>
+      </div>
+
+      <div class="service_card_mg">
+        <div class="service_icon_box_mg">🌱</div>
+        <h3>Social Work</h3>
+        <p>Impact-driven initiatives focused on long-term community development.</p>
+        <span class="service_arrow_mg">→</span>
+      </div>
+
+      <div class="service_card_mg">
+        <div class="service_icon_box_mg">💼</div>
+        <h3>Job Placement</h3>
+        <p>Connecting candidates with the right opportunities through smart platforms.</p>
+        <span class="service_arrow_mg">→</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== SERVICES SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== CTA SECTION START ===== -->
+<section class="cta_main_mg">
+
+  <div class="cta_container_mg">
+
+    <div class="cta_card_mg">
+
+      <div class="cta_overlay_mg"></div>
+
+      <div class="cta_content_mg">
+
+        <h2 class="cta_title_mg">Let’s Create Something Together</h2>
+
+        <p class="cta_subtitle_mg">
+          Partner with us to build scalable, high-impact solutions across industries.
+        </p>
+
+        <div class="cta_buttons_mg">
+          <a href="#" class="cta_btn_primary_mg" onclick="openPopupMg()" >Start Now</a>
+          <a href="#" class="cta_btn_secondary_mg">Contact Us</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== CTA SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== INDUSTRIES SECTION START ===== -->
+<section class="industries_main_mg">
+
+  <div class="industries_container_mg">
+
+    <!-- Header -->
+    <div class="industries_header_mg">
+      <h2 class="industries_title_mg">Industries We Serve</h2>
+      <p class="industries_subtitle_mg">
+        Empowering diverse industries through strong expertise and intelligent solutions.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="industries_grid_mg">
+
+      <div class="industry_card_mg">
+        <div class="industry_icon_wrap_mg">🏢</div>
+        <h3>Real Estate</h3>
+        <p>Real Estate is a business that deals with buying, selling, renting, and managing residential or commercial properties.</p>
+      </div>
+
+      <div class="industry_card_mg">
+        <div class="industry_icon_wrap_mg">💻</div>
+        <h3>HR Consultancy</h3>
+        <p>An HR Consultancy helps companies hire employees and manage recruitment services.</p>
+      </div>
+
+      <div class="industry_card_mg">
+        <div class="industry_icon_wrap_mg">🏥</div>
+        <h3>NGO</h3>
+        <p>An NGO is a non-profit organization that works for social welfare and helping people or animals.</p>
+      </div>
+
+      <div class="industry_card_mg">
+        <div class="industry_icon_wrap_mg">⚖️</div>
+        <h3>Law Firm</h3>
+        <p>A Law Firm provides legal services and advice to individuals, businesses, and organizations.</p>
+      </div>
+
+      <div class="industry_card_mg">
+        <div class="industry_icon_wrap_mg">🎓</div>
+        <h3>Job Portal</h3>
+        <p>A Job Portal is an online platform where employers post jobs and candidates apply for opportunities.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== INDUSTRIES SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== FEATURED PROJECTS SECTION START ===== -->
+<section class="projects_main_mg">
+
+  <div class="projects_container_mg">
+
+    <!-- Header -->
+    <div class="projects_header_mg">
+      <h2 class="projects_title_mg">Featured Projects</h2>
+      <p class="projects_subtitle_mg">
+        Showcasing our work across industries with impactful and performance-driven solutions.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="projects_grid_mg">
+
+      <!-- Project Card -->
+      <div class="project_card_mg">
+        <img src="{% static 'images/real-eastate-features.png' %}" alt="Real Estate Project">
+
+        <div class="project_overlay_mg">
+          <span class="project_tag_mg">Real Estate</span>
+          <h3>Luxury Residential Development</h3>
+          <p>End-to-end property development and strategic sales execution.</p>
+          <a href="#" class="project_link_mg">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="project_card_mg">
+        <img src="{% static 'images/hr-consultancy-features.png' %}" alt="HR Project">
+
+        <div class="project_overlay_mg">
+          <span class="project_tag_mg">HR Consultancy</span>
+          <h3>Corporate Hiring Solution</h3>
+          <p>Managed large-scale recruitment operations for enterprise clients.</p>
+          <a href="#" class="project_link_mg">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="project_card_mg">
+        <img src="{% static 'images/law-firm-features.jpg' %}" alt="Legal Project">
+
+        <div class="project_overlay_mg">
+          <span class="project_tag_mg">Legal</span>
+          <h3>Legal Compliance Framework</h3>
+          <p>Structured compliance and legal documentation system.</p>
+          <a href="#" class="project_link_mg">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="project_card_mg">
+        <img src="{% static 'images/ngo-features.jpg' %}" alt="NGO Project">
+
+        <div class="project_overlay_mg">
+          <span class="project_tag_mg">NGO</span>
+          <h3>Community Development Program</h3>
+          <p>Executed impactful social initiatives across multiple regions.</p>
+          <a href="#" class="project_link_mg">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="project_card_mg">
+        <img src="{% static 'images/job-portal-features.jpg' %}" alt="Job Portal">
+
+        <div class="project_overlay_mg">
+          <span class="project_tag_mg">Job Portal</span>
+          <h3>Smart Hiring Platform</h3>
+          <p>Built a scalable job platform connecting employers and candidates.</p>
+          <a href="#" class="project_link_mg">View Project →</a>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== FEATURED PROJECTS SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== WHY CHOOSE US SECTION START ===== -->
+<section class="why_main_mg">
+
+  <div class="why_container_mg">
+
+    <!-- LEFT CONTENT -->
+    <div class="why_left_mg">
+      <h2 class="why_title_mg">Why Choose Us</h2>
+
+      <p class="why_subtitle_mg">
+        We bring together expertise, trust, and innovation to deliver strong value across industries.
+      </p>
+
+      <!-- Points -->
+      <div class="why_points_mg">
+
+        <div class="why_point_mg">
+          <div class="why_icon_mg">✔</div>
+          <div>
+            <h4>Trusted by Clients</h4>
+            <p>Building long-term relationships through trust and transparency.</p>
+          </div>
+        </div>
+
+        <div class="why_point_mg">
+          <div class="why_icon_mg">✔</div>
+          <div>
+            <h4>Proven Experience</h4>
+            <p>Years of industry experience delivering strong measurable results.</p>
+          </div>
+        </div>
+
+        <div class="why_point_mg">
+          <div class="why_icon_mg">✔</div>
+          <div>
+            <h4>Multi-Industry Expertise</h4>
+            <p>Unified solutions across real estate, HR, legal, NGO, and digital platforms.</p>
+          </div>
+        </div>
+
+        <div class="why_point_mg">
+          <div class="why_icon_mg">✔</div>
+          <div>
+            <h4>Client Satisfaction</h4>
+            <p>Focused on delivering value and exceeding expectations every time.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE CARD -->
+    <div class="why_right_mg">
+      <div class="why_highlight_card_mg">
+
+        <h3>Driving Growth Across Industries</h3>
+
+        <p>
+          Our integrated approach ensures businesses and individuals receive complete, reliable, and scalable solutions under one platform.
+        </p>
+
+        <p>
+          We focus on delivering efficient systems that improve performance, reduce complexity, and drive better business outcomes.
+        </p>
+
+        <p>
+          Our team combines industry knowledge with practical execution to create solutions that support long-term growth and stability.
+        </p>
+
+        <p>
+          We continuously adapt to market trends and client needs to deliver innovative and future-ready solutions across industries.
+        </p>
+
+        
+
+        <div class="why_stats_mg">
+          <div>
+            <h4>100+</h4>
+            <span>Clients</span>
+          </div>
+          <div>
+            <h4>50+</h4>
+            <span>Projects</span>
+          </div>
+          <div>
+            <h4>5+</h4>
+            <span>Industries</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== WHY CHOOSE US SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== STATS SECTION START ===== -->
+<section class="stats_main_mg">
+
+  <div class="stats_overlay_mg"></div>
+
+  <div class="stats_container_mg">
+
+    <div class="stats_grid_mg">
+
+      <div class="stat_card_mg">
+        <h3 class="stat_number_mg" data-target="100">0</h3>
+        <p>Clients</p>
+      </div>
+
+      <div class="stat_card_mg">
+        <h3 class="stat_number_mg" data-target="50">0</h3>
+        <p>Projects</p>
+      </div>
+
+      <div class="stat_card_mg">
+        <h3 class="stat_number_mg" data-target="10">0</h3>
+        <p>Years Experience</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== STATS SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== TESTIMONIALS SECTION START ===== -->
+<section class="testimonials_main_mg">
+
+  <div class="testimonials_container_mg">
+
+    <!-- Header -->
+    <div class="testimonials_header_mg">
+      <h2 class="testimonials_title_mg">What Our Clients Say</h2>
+      <p class="testimonials_subtitle_mg">
+        Trusted by businesses and clients across multiple industries.
+      </p>
+    </div>
+
+    <!-- Slider -->
+    <div class="testimonials_slider_mg">
+
+      <div class="testimonials_track_mg" id="testimonialsTrack">
+
+        <!-- Card -->
+        <div class="testimonial_card_mg">
+          <p>"Excellent service across multiple domains. Their professionalism and support are truly outstanding."</p>
+          <div class="testimonial_user_mg">
+            <strong>Rahul Sharma</strong>
+            <span>Real Estate Client</span>
+          </div>
+        </div>
+
+        <div class="testimonial_card_mg">
+          <p>"They helped us scale our hiring process smoothly. Highly recommended HR solutions."</p>
+          <div class="testimonial_user_mg">
+            <strong>Ankit Verma</strong>
+            <span>HR Client</span>
+          </div>
+        </div>
+
+        <div class="testimonial_card_mg">
+          <p>"Very reliable legal consultation. Smooth and professional handling of complete documentation."</p>
+          <div class="testimonial_user_mg">
+            <strong>Priya Singh</strong>
+            <span>Legal Client</span>
+          </div>
+        </div>
+
+
+
+        <div class="testimonial_card_mg">
+          <p>"Their NGO initiatives are impactful and well-managed. Truly creating a positive difference."</p>
+          <div class="testimonial_user_mg">
+            <strong>Amit Kumar</strong>
+            <span>NGO Partner</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <div class="testimonial_controls_mg">
+        <button onclick="prevSlide()">←</button>
+        <button onclick="nextSlide()">→</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== TESTIMONIALS SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== CAREERS SECTION START ===== -->
+<section class="careers_main_mg">
+
+  <div class="careers_container_mg">
+
+    <div class="careers_box_mg">
+
+      <h2 class="careers_title_mg">Join Our Team</h2>
+
+      <p class="careers_subtitle_mg">
+        Be part of a dynamic multi-industry organization where innovation, growth, and opportunities grow together.
+      </p>
+
+      <a href="#" class="careers_btn_mg" onclick="openPopupMg()">Apply Now →</a>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== CAREERS SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== BLOG SECTION START ===== -->
+<section class="blog_main_mg">
+
+  <div class="blog_container_mg">
+
+    <!-- Header -->
+    <div class="blog_header_mg">
+      <h2 class="blog_title_mg">Insights & Articles</h2>
+      <p class="blog_subtitle_mg">
+        Latest updates, ideas, and expert insights from multiple industries.
+      </p>
+    </div>
+
+    <!-- Layout -->
+    <div class="blog_layout_mg">
+
+      <!-- Featured Article -->
+      <div class="blog_featured_mg">
+        <img src="{% static 'images/multiples-Articles.png' %}" alt="Featured Blog">
+
+        <div class="blog_featured_content_mg">
+          <span class="blog_tag_mg">Business</span>
+          <h3>How Multi-Industry Businesses Scale Faster</h3>
+          <p>Explore how integrated services help businesses grow efficiently across industries.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Side Articles -->
+      <div class="blog_grid_mg">
+
+        <div class="blog_card_mg">
+          <img src="{% static 'images/hr-consutancy-Articles.jpg' %}">
+          <h4>Smart Hiring Strategies for Modern Businesses</h4>
+          <a href="#">Read →</a>
+        </div>
+
+        <div class="blog_card_mg">
+          <img src="{% static 'images/law-Articles.png' %}">
+          <h4>Legal Compliance for Modern Businesses</h4>
+          <a href="#">Read →</a>
+        </div>
+
+        <div class="blog_card_mg">
+          <img src="{% static 'images/ngo_Articles.png' %}">
+          <h4>Impact of NGOs on Community Growth</h4>
+          <a href="#">Read →</a>
+        </div>
+
+        <div class="blog_card_mg">
+          <img src="{% static 'images/property-Articles.png' %}">
+          <h4>Real Estate Investment Insights</h4>
+          <a href="#">Read →</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== BLOG SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+let index = 0;
+
+function updateSlider() {
+  const track = document.getElementById("testimonialsTrack");
+  const cardWidth = track.children[0].offsetWidth + 20;
+  track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+function nextSlide() {
+  const track = document.getElementById("testimonialsTrack");
+  if (index < track.children.length - 3) {
+    index++;
+  } else {
+    index = 0;
+  }
+  updateSlider();
+}
+
+function prevSlide() {
+  const track = document.getElementById("testimonialsTrack");
+  if (index > 0) {
+    index--;
+  } else {
+    index = track.children.length - 3;
+  }
+  updateSlider();
+}
+
+/* Auto Slide */
+setInterval(() => {
+  nextSlide();
+}, 4000);
+</script>
+
+
+<script>
+const counters = document.querySelectorAll(".stat_number_mg");
+
+let started = false;
+
+function runCounter() {
+  counters.forEach(counter => {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+
+    const increment = target / 80;
+
+    const update = () => {
+      count += increment;
+
+      if (count < target) {
+        counter.innerText = Math.floor(count) + "+";
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = target + "+";
+      }
+    };
+
+    update();
+  });
+}
+
+window.addEventListener("scroll", () => {
+  const section = document.querySelector(".stats_main_mg");
+  const sectionTop = section.getBoundingClientRect().top;
+
+  if (sectionTop < window.innerHeight - 100 && !started) {
+    runCounter();
+    started = true;
+  }
+});
+</script>
+
+{% endblock %}

@@ -1,0 +1,630 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title  %}Industries - Inzaagi Group{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/industries.css' %}">
+{% endblock %}
+{% block content %}
+
+
+<section class="about_banner_main_mg" id="industries_banner">
+
+  <div class="about_banner_container_mg">
+
+    <!-- LEFT CONTENT -->
+    <div class="about_banner_left_mg">
+
+      <h1 class="about_banner_title_mg">
+        Industries We <br> Work Across
+      </h1>
+
+      <p class="about_banner_subtitle_mg">
+        From Real Estate and HR Consultancy to Legal Services, NGO initiatives, and Job Portals — we deliver structured solutions that help businesses grow faster and work smarter.
+      </p>
+
+      <div class="about_banner_buttons_mg">
+        <a href="#" class="about_btn_primary_mg">Explore Companies →</a>
+        <a href="#" class="about_btn_outline_mg" onclick="openPopupMg()">Contact Us</a>
+      </div>
+
+      <div class="about_banner_badges_mg">
+        <span>Trusted by 10K+ Clients</span>
+        <span>Multi Industry Platform</span>
+        <span>Enterprise Solutions</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== ABOUT PAGE BANNER END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== INDUSTRIES INTRO START ===== -->
+<section class="industries_intro_main_mg" id = "Industries-We-Serve">
+
+  <div class="industries_intro_container_mg">
+
+    <div class="industries_intro_grid_mg">
+
+      <!-- LEFT -->
+      <div class="industries_intro_left_mg">
+
+        <span class="industries_tag_mg">Industries We Serve</span>
+
+        <h2 class="industries_intro_title_mg">
+          Delivering Value Across Multiple Industries
+        </h2>
+
+
+        <p class="industries_intro_desc_mg">
+          We operate across selected industries, delivering solutions tailored to each sector’s specific needs.
+          Our approach combines practical expertise, technology, and strategy to deliver reliable and consistent results.
+        </p>
+
+
+        <p class="industries_intro_desc_mg">
+          From real estate and HR consultancy to legal services, NGO initiatives, and job platforms, we support businesses with scalable solutions,
+          helping them grow, adapt, and succeed in a competitive environment.
+        </p>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="industries_intro_right_mg">
+
+        <div class="industries_intro_image_mg">
+          <img src="{% static 'images/industries_we-serve.png' %}" alt="Industries">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== INDUSTRIES INTRO END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== INDUSTRIES CARDS PREMIUM START ===== -->
+<section class="industries_cards_main_mg"  id="Industries">
+
+  <div class="industries_cards_container_mg">
+
+    <!-- HEADER -->
+    <div class="industries_cards_header_mg">
+      <h2>Industries We Serve</h2>
+      <p>Delivering focused solutions across key industries</p>
+    </div>
+
+    <!-- GRID -->
+    <div class="industries_cards_grid_mg">
+
+      <!-- CARD -->
+      <div class="industry_card_mg">
+        <div class="industry_card_inner_mg">
+          <div class="industry_icon_mg">🏢</div>
+          <h3>Real Estate</h3>
+          <p>Property consulting and strategic investment solutions.</p>
+        </div>
+      </div>
+
+      <div class="industry_card_mg">
+        <div class="industry_card_inner_mg">
+          <div class="industry_icon_mg">💻</div>
+          <h3>HR Consulting</h3>
+          <p>Smart recruitment and workforce management solutions.</p>
+        </div>
+      </div>
+
+      <div class="industry_card_mg">
+        <div class="industry_card_inner_mg">
+          <div class="industry_icon_mg">🏥</div>
+          <h3>NGO</h3>
+          <p>Community-driven initiatives for social growth and impact.</p>
+        </div>
+      </div>
+
+      
+      <div class="industry_card_mg">
+        <div class="industry_card_inner_mg">
+          <div class="industry_icon_mg">⚖️</div>
+          <h3>Legal</h3>
+          <p>Professional legal advisory and compliance services.</p>
+        </div>
+      </div>
+
+      <div class="industry_card_mg">
+        <div class="industry_card_inner_mg">
+          <div class="industry_icon_mg">🎓</div>
+          <h3>Job Portal</h3>
+          <p>Smart hiring platforms connecting talent with opportunities.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== INDUSTRIES CARDS PREMIUM END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== CAREERS SECTION START ===== -->
+<section class="careers_main_mg" id="legal-services">
+
+  <div class="careers_container_mg">
+
+    <div class="careers_box_mg">
+
+      <h2 class="careers_title_mg">Join Our Team</h2>
+
+      <p class="careers_subtitle_mg">
+        Be part of a dynamic multi-industry organization where innovation, growth, and opportunities come together.
+      </p>
+
+      <a href="#" class="careers_btn_mg" onclick="openPopupMg()">Apply Now →</a>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== CAREERS SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== INDUSTRY DETAIL SECTION START ===== -->
+<section class="industry_detail_main_mg" id= "hr-consultancy">
+
+  <div class="industry_detail_container_mg">
+
+    <!-- TITLE -->
+    <div class="industry_detail_header_mg">
+      <h2>Real Estate Industry</h2>
+      <p>Delivering smart solutions for modern property and investment challenges.</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="industry_detail_grid_mg">
+
+      <!-- CHALLENGES -->
+      <div class="industry_block_mg">
+        <h3>Challenges</h3>
+        <ul>
+          <li>Complex property regulations and legal compliance</li>
+          <li>Market fluctuations and uncertain investment risks</li>
+          <li>Difficulty in identifying high-return opportunities</li>
+        </ul>
+      </div>
+
+      <!-- SOLUTIONS -->
+      <div class="industry_block_mg">
+        <h3>Solutions</h3>
+        <ul>
+          <li>Advanced data-driven property analysis</li>
+          <li>Strategic investment planning and consulting</li>
+          <li>Complete end-to-end transaction support</li>
+        </ul>
+      </div>
+
+
+      <!-- SERVICES -->
+      <div class="industry_block_mg">
+        <h3>Services Used</h3>
+        <ul>
+          <li>Property consulting services</li>
+          <li>Legal advisory and documentation</li>
+          <li>Market research and analytics</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== INDUSTRY DETAIL SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== CASE STUDIES SLIDER START ===== -->
+<section class="case_main_mg" id="Case-Studies">
+
+  <div class="case_container_mg">
+
+    <div class="case_header_mg">
+      <h2>Case Studies</h2>
+      <p>Real results delivered across industries through structured execution.</p>
+    </div>
+
+    <div class="case_slider_wrapper_mg">
+
+      <button class="case_btn_mg left_mg" id="prevBtnMg">&#10094;</button>
+
+      <div class="case_slider_mg" id="caseSliderMg">
+        <div class="case_track_mg" id="caseTrackMg">
+
+          <!-- CARD -->
+          <div class="case_card_mg">
+            <h3>Real Estate Growth Strategy</h3>
+            <p><strong>Challenge:</strong> Client faced difficulty identifying high ROI investments in an unstable market.</p>
+            <p><strong>Solution:</strong> We implemented data-driven property analysis with structured risk evaluation.</p>
+            <p class="result_mg">Result: 35% ROI growth within 6 months</p>
+          </div>
+
+          <div class="case_card_mg">
+            <h3>HR Hiring Optimization</h3>
+            <p><strong>Challenge:</strong> Slow hiring process affecting overall business scaling.</p>
+            <p><strong>Solution:</strong> Built a structured recruitment pipeline using automation tools.</p>
+            <p class="result_mg">Result: 50% faster hiring process</p>
+          </div>
+
+          <div class="case_card_mg">
+            <h3>Legal Compliance System</h3>
+            <p><strong>Challenge:</strong> Frequent compliance delays and documentation gaps.</p>
+            <p><strong>Solution:</strong> Implemented a centralized legal workflow and advisory system.</p>
+            <p class="result_mg">Result: 100% compliance achievement</p>
+          </div>
+
+          <div class="case_card_mg">
+            <h3>NGO</h3>
+            <p><strong>Challenge:</strong> Lack of structured systems for managing community programs.</p>
+            <p><strong>Solution:</strong> Implemented a simple digital system for tracking and operations.</p>
+            <p class="result_mg">Result: 40% improvement in operational efficiency</p>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="case_btn_mg right_mg" id="nextBtnMg">&#10095;</button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<script>
+const slider = document.getElementById("caseSliderMg");
+const track = document.getElementById("caseTrackMg");
+const prevBtn = document.getElementById("prevBtnMg");
+const nextBtn = document.getElementById("nextBtnMg");
+
+let position = 0;
+
+function getMaxScroll() {
+  return track.scrollWidth - slider.clientWidth;
+}
+
+function updateButtons() {
+  const maxScroll = getMaxScroll();
+
+  // LEFT BUTTON
+  if (position <= 0) {
+    prevBtn.style.display = "none";
+  } else {
+    prevBtn.style.display = "block";
+  }
+
+  // RIGHT BUTTON
+  if (position >= maxScroll - 1) {
+    nextBtn.style.display = "none";
+  } else {
+    nextBtn.style.display = "block";
+  }
+}
+
+function slideNext() {
+  const card = document.querySelector(".case_card_mg");
+  const move = card.offsetWidth + 20;
+
+  position += move;
+
+  const maxScroll = getMaxScroll();
+  if (position > maxScroll) position = maxScroll;
+
+  track.style.transform = `translateX(-${position}px)`;
+  updateButtons();
+}
+
+function slidePrev() {
+  const card = document.querySelector(".case_card_mg");
+  const move = card.offsetWidth + 20;
+
+  position -= move;
+  if (position < 0) position = 0;
+
+  track.style.transform = `translateX(-${position}px)`;
+  updateButtons();
+}
+
+nextBtn.addEventListener("click", slideNext);
+prevBtn.addEventListener("click", slidePrev);
+
+window.addEventListener("load", updateButtons);
+window.addEventListener("resize", updateButtons);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== IMPACT STATS START ===== -->
+<section class="impact_main_mg" id="Our-Impact">
+
+  <div class="impact_container_mg">
+
+    <div class="impact_header_mg">
+      <h2>Our Impact Across Industries</h2>
+      <p>Delivering measurable results through strategy, execution, and consistent innovation.</p>
+    </div>
+
+    <div class="impact_grid_mg">
+
+      <div class="impact_item_mg">
+        <h3>100+</h3>
+        <span>Clients Served</span>
+      </div>
+
+      <div class="impact_item_mg">
+        <h3>50+</h3>
+        <span>Projects Delivered</span>
+      </div>
+
+      <div class="impact_item_mg">
+        <h3>10+</h3>
+        <span>Years Experience</span>
+      </div>
+
+      <div class="impact_item_mg">
+        <h3>5+</h3>
+        <span>Industries Covered</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

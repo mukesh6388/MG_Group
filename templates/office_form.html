@@ -1,0 +1,251 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titile %}{% endblock %}
+{% block description %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+{% block content %}
+
+
+<!-- ===== PREMIUM BOOKING FORM START ===== -->
+
+<section class="booking_form_main_mg">
+
+  <div class="booking_form_container_mg">
+
+    <!-- HEADER -->
+    <div class="booking_form_header_mg">
+
+      <span>
+        Office Booking Form
+      </span>
+
+      <h2>
+        Booking & Deal Information
+      </h2>
+
+    </div>
+
+    <!-- FORM -->
+    <form class="booking_form_grid_mg" method="POST">
+
+      {% csrf_token %}
+
+      <input type="hidden" name="form_type" value="office_booking">
+
+
+      <!-- BOOKING DATE -->
+      <div class="booking_input_box_mg">
+
+        <input type="date" name="booking_date" required>
+
+        <label>
+          Booking Date *
+        </label>
+
+      </div>
+
+      <!-- SHIFTING DATE -->
+      <div class="booking_input_box_mg">
+
+        <input type="date" name="shifting_date" required>
+
+        <label>
+          Shifting Date *
+        </label>
+
+      </div>
+
+      <!-- CLIENT NAME -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="client_name" required>
+
+        <label>
+          Client Name *
+        </label>
+
+      </div>
+
+      <!-- BC / PC -->
+      <div class="booking_input_box_mg">
+
+        <select name="bc_pc" required>
+          <option value="" disabled selected></option>
+          <option>BC</option>
+          <option>PC</option>
+          <option>Both</option>
+        </select>
+
+        <label>
+          BC / PC *
+        </label>
+
+      </div>
+
+      <!-- OFFICE -->
+      <div class="booking_input_box_mg">
+
+        <select name="office_no" required>
+          <option value="" disabled selected></option>
+          <option>Office 101</option>
+          <option>Office 202</option>
+          <option>Office 303</option>
+        </select>
+
+        <label>
+          Office No. *
+        </label>
+
+      </div>
+
+      <!-- DEAL AMOUNT -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="deal_amount" required>
+
+        <label>
+          Deal Amount *
+        </label>
+
+      </div>
+
+      <!-- TOKEN -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="token_amount" required>
+
+        <label> 
+          Token Amount *
+        </label>
+
+      </div>
+
+      <!-- SECURITY -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="security_amount" required>
+
+        <label>
+          Security Amount *
+        </label>
+
+      </div>
+
+      <!-- DEAL BY -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="deal_by" required>
+
+        <label>
+          Deal By *
+        </label>
+
+      </div>
+
+      <!-- BROKERAGE -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="brokerage" required>
+
+        <label>
+          Brokerage *
+        </label>
+
+      </div>
+
+      <!-- CABIN -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="cabin" required>
+
+        <label> 
+          Cabin *
+        </label>
+
+      </div>
+
+      <!-- WORK STATION -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="work_station" required>
+
+        <label>
+          Work Station *
+        </label>
+
+      </div>
+
+      <!-- MAINTENANCE -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="maintenance"  required>
+
+        <label>
+          Maintenance *
+        </label>
+
+      </div>
+
+      <!-- NATURE OF WORK -->
+      <div class="booking_input_box_mg">
+
+        <select name="nature_of_work" required>
+          <option value="" disabled selected></option>
+          <option>Real Estate</option>
+          <option>Consultancy</option>
+          <option>Marketing</option>
+        </select>
+
+        <label>
+          Nature Of Work *
+        </label>
+
+      </div>
+
+      <!-- GST -->
+      <div class="booking_input_box_mg">
+
+        <select name="gst" required>
+          <option value="" disabled selected></option>
+          <option>Included</option>
+          <option>Excluded</option>
+          <option>Not Applicable</option>
+        </select>
+
+        <label>
+          GST *
+        </label>
+
+      </div>
+
+      <!-- PENDING -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="pending_amount" required>
+
+        <label>
+          Pending Amount *
+        </label>
+
+      </div>
+
+      <!-- BUTTON -->
+      <button type="submit" class="booking_submit_btn_mg">
+
+        Submit Booking Details
+
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- ===== PREMIUM BOOKING FORM END ===== -->
+
+
+
+{% endblock %}

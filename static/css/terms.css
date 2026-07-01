@@ -1,0 +1,92 @@
+/* ===== ENTERPRISE TERMS START ===== */
+
+.enterprise_terms_main_mg{
+  padding:50px 0;
+  background:#ffffff;
+}
+
+.enterprise_terms_container_mg{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+}
+
+/* ===== BLOCK ===== */
+
+.enterprise_terms_block_mg{
+  margin-bottom:85px;
+}
+
+.enterprise_terms_block_mg:last-child{
+  margin-bottom:0;
+}
+
+/* ===== MAIN HEADING ===== */
+
+.enterprise_terms_block_mg h2{
+  font-size:22px;
+  line-height:1.4;
+  font-weight:600;
+  color:#111827;
+
+  margin-bottom:38px;
+}
+
+/* ===== SUB HEADING ===== */
+
+.enterprise_terms_block_mg h4{
+  font-size:18px;
+  line-height:1.5;
+  font-weight:600;
+  color:#111827;
+
+  margin-top:38px;
+  margin-bottom:14px;
+}
+
+/* ===== PARAGRAPH ===== */
+
+.enterprise_terms_block_mg p{
+  font-size:15px;
+  line-height:2.1;
+  font-weight:400;
+  color:#374151;
+
+  margin-bottom:22px;
+
+  max-width:1080px;
+}
+
+.enterprise_terms_block_mg p:last-child{
+  margin-bottom:0;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:992px){
+
+  .enterprise_terms_main_mg{
+    padding:90px 0;
+  }
+
+  .enterprise_terms_block_mg{
+    margin-bottom:65px;
+  }
+
+  .enterprise_terms_block_mg h2{
+    font-size:20px;
+    margin-bottom:28px;
+  }
+
+  .enterprise_terms_block_mg h4{
+    font-size:16px;
+  }
+
+  .enterprise_terms_block_mg p{
+    font-size:14px;
+    line-height:1.9;
+  }
+
+}
+
+/* ===== ENTERPRISE TERMS END ===== */

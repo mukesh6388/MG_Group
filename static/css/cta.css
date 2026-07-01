@@ -1,0 +1,396 @@
+
+
+
+/* ===== CTA SECTION START ===== */
+
+.cta_main_mg {
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+/* Container */
+.cta_container_mg {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Card */
+.cta_card_mg {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+
+  height: 360px;
+
+  background: url("../images/cta-home.png") center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 30px 80px rgba(0,0,0,0.1);
+}
+
+/* Overlay */
+.cta_overlay_mg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.6)
+  );
+}
+
+/* Content */
+.cta_content_mg {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 650px;
+  padding: 0 20px;
+}
+
+/* Title */
+.cta_title_mg {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+/* Subtitle */
+.cta_subtitle_mg {
+  font-size: 16px;
+  color: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.cta_buttons_mg {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Primary */
+.cta_btn_primary_mg {
+  padding: 14px 28px;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta_btn_primary_mg:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+/* Secondary */
+.cta_btn_secondary_mg {
+  padding: 14px 28px;
+  border-radius: 8px;
+
+  border: 1px solid rgba(255,255,255,0.6);
+  color: #ffffff;
+
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.cta_btn_secondary_mg:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cta_card_mg {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .cta_title_mg {
+    font-size: 28px;
+  }
+}
+
+/* ===== CTA SECTION END ===== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== STATS SECTION START ===== */
+
+.stats_main_mg {
+  position: relative;
+  padding: 50px 0;
+
+  background: url("../images/cta-partner-home.png") center/cover no-repeat;
+}
+
+/* Overlay */
+.stats_overlay_mg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.85)
+  );
+}
+
+/* Container */
+.stats_container_mg {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Grid */
+.stats_grid_mg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+/* Card */
+.stat_card_mg {
+  padding: 30px 20px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.3s;
+}
+
+/* Glow effect */
+.stat_card_mg:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(37,99,235,0.25);
+}
+
+/* Number */
+.stat_number_mg {
+  font-size: 48px;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 8px;
+}
+
+/* Text */
+.stat_card_mg p {
+  font-size: 15px;
+  color: #d1d5db;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .stats_grid_mg {
+    grid-template-columns: 1fr;
+  }
+
+  .stat_number_mg {
+    font-size: 36px;
+  }
+}
+
+/* ===== STATS SECTION END ===== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== CAREERS SECTION START ===== */
+
+.careers_main_mg {
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+/* Container */
+.careers_container_mg {
+  max-width: 1299px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Box */
+.careers_box_mg {
+  position: relative;
+  text-align: center;
+
+  padding: 80px 40px;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #111827,
+    #1f2937,
+    #111827
+  );
+
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Soft gradient glow */
+.careers_box_mg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(59,130,246,0.25), transparent 50%);
+}
+
+/* Title */
+.careers_title_mg {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Subtitle */
+.careers_subtitle_mg {
+  font-size: 16px;
+  color: #d1d5db;
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Button */
+.careers_btn_mg {
+  display: inline-block;
+
+  padding: 14px 30px;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.careers_btn_mg:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255,255,255,0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .careers_title_mg {
+    font-size: 30px;
+  }
+
+  .careers_box_mg {
+    padding: 60px 20px;
+  }
+}
+
+/* ===== CAREERS SECTION END ===== */
+
+
+

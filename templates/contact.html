@@ -1,0 +1,958 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact - Inzaagi Group{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+{% block content %}
+
+<section class="about_banner_main_mg">
+
+  <div class="about_banner_container_mg">
+
+    <!-- LEFT CONTENT -->
+    <div class="about_banner_left_mg">
+
+      <h1 class="about_banner_title_mg">
+        Contact Our <br> Team Today
+      </h1>
+
+      <p class="about_banner_subtitle_mg">
+        From Real Estate and HR Consultancy to Legal Services, NGO initiatives, and Job Portals — connect with us to discuss your needs and get the right solutions.
+      </p>
+
+      <div class="about_banner_buttons_mg">
+        <a href="#" class="about_btn_primary_mg">Explore Companies →</a>
+        <a href="#" class="about_btn_outline_mg" onclick="openPopupMg()">Contact Us</a>
+      </div>
+
+      <div class="about_banner_badges_mg">
+        <span>Trusted by 10K+ Clients</span>
+        <span>Multi Industry Platform</span>
+        <span>Enterprise Solutions</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== ABOUT PAGE BANNER END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== CONTACT INFO SECTION START ===== -->
+<section class="contact_info_main_mg">
+
+  <div class="contact_info_container_mg">
+
+    <div class="contact_info_grid_mg">
+
+      <!-- PHONE -->
+      <div class="contact_info_card_mg">
+        <div class="contact_icon_mg">📞</div>
+        <h3>Call Us</h3>
+        <p>+91 90-1565-1565</p>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="contact_info_card_mg">
+        <div class="contact_icon_mg">✉️</div>
+        <h3>Email Us</h3>
+        <p>info@inzagigroup.com</p>
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="contact_info_card_mg">
+        <div class="contact_icon_mg">📍</div>
+        <h3>Head Office</h3>
+        <p>Noida, Uttar Pradesh, India</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== CONTACT INFO SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% if success %}
+
+<div class="success_msg_mg">
+    Form Submitted Successfully
+</div>
+
+{% endif %}
+
+
+
+
+
+
+<!-- ===== CONTACT FORM + MAP START ===== -->
+<section class="contact_main_mg">
+
+  <div class="contact_container_mg">
+
+    <div class="contact_grid_mg">
+
+      <!-- ===== LEFT: FORM ===== -->
+      <div class="contact_form_wrap_mg">
+
+        <h2 class="contact_title_mg">Get in Touch</h2>
+        <p class="contact_subtitle_mg">
+          Share your requirements and our team will connect with you shortly.
+        </p>
+
+        <form class="contact_form_mg" method="post" action="">
+          {% csrf_token %}
+
+          <input type="hidden" name="form_type" value="contact_form">
+
+          <!-- NAME -->
+          <div class="input_group_mg">
+            <input type="text" name="name" required>
+            <label>Full Name *</label>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="input_group_mg">
+            <input type="email" name="email" required>
+            <label>Email Address *</label>
+          </div>
+
+          <!-- PHONE -->
+          <div class="input_group_mg">
+            <input type="text" name="phone" required>
+            <label>Phone Number *</label>
+          </div>
+
+          <!-- SERVICE -->
+          <div class="input_group_mg">
+            <select name="service" required>
+              <option value="" disabled selected></option>
+              <option>Real Estate</option>
+              <option>HR Consultancy</option>
+              <option>Legal Services</option>
+              <option>NGO</option>
+              <option>Job Portal</option>
+            </select>
+            <label>Select Service *</label>
+          </div>
+
+          <!-- MESSAGE -->
+          <div class="input_group_mg">
+            <textarea name="message" rows="4" required></textarea>
+            <label>Your Requirement *</label>
+          </div>
+
+          <!-- BUTTON -->
+          <button type="submit" class="contact_submit_mg">
+            Submit Request
+          </button>
+
+        </form>
+
+
+      </div>
+
+      <!-- ===== RIGHT: MAP ===== -->
+      <div class="contact_map_mg">
+
+        <iframe
+          src="https://www.google.com/maps?q=Noida,India&output=embed"
+          loading="lazy">
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== CONTACT FORM + MAP END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== OFFICE LOCATIONS START ===== -->
+<section class="office_main_mg">
+
+  <div class="office_container_mg">
+
+    <!-- Header -->
+    <div class="office_header_mg">
+      <h2 class="office_title_mg">Our Offices</h2>
+      <p class="office_subtitle_mg">
+        Visit our offices or connect with us at your nearest location.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="office_grid_mg">
+
+      <!-- Location -->
+      <div class="office_card_mg">
+        <h3>Noida (Head Office)</h3>
+        <p>📍 Noida, Uttar Pradesh, India</p>
+        <p>📞 +91 90-1565-1565</p>
+        <p>✉️ info@inzagigroup.com</p>
+      </div>
+
+      <div class="office_card_mg">
+        <h3>Delhi Office</h3>
+        <p>📍 New Delhi, India</p>
+        <p>📞 +91 90-1565-1565</p>
+        <p>✉️ info@inzagigroup.com</p>
+      </div>
+
+      <div class="office_card_mg">
+        <h3>Gurgaon Office</h3>
+        <p>📍 Gurgaon, Haryana, India</p>
+        <p>📞 +91 90-1565-1565</p>
+        <p>✉️ info@inzagigroup.com</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== OFFICE LOCATIONS END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== PREMIUM PROPERTY FORM START ===== -->
+
+<section class="premium_form_main_mg">
+
+  <div class="premium_form_container_mg">
+
+    <!-- HEADER -->
+    <div class="premium_form_header_mg">
+
+      <span>
+        Property Inquiry Form
+      </span>
+
+      <h2>
+        Submit Your Requirement
+      </h2>
+
+    </div>
+
+    <!-- FORM -->
+    <form class="premium_form_grid_mg" method="POST" > 
+      {% csrf_token %}
+
+      <input type="hidden" name="form_type" value="property_inquiry">
+
+      <!-- NAME -->
+      <div class="premium_input_box_mg">
+
+        <input type="text" name="full_name" required>
+
+        <label>
+          Full Name *
+        </label>
+
+      </div>
+
+      <!-- CONTACT -->
+      <div class="premium_input_box_mg">
+
+        <input type="text" name="contact_number" required>
+
+        <label>
+          Contact Number *
+        </label>
+
+      </div>
+
+      <!-- EMAIL -->
+      <div class="premium_input_box_mg">
+
+        <input type="email" name="email" required>
+
+        <label>
+          Email Address *
+        </label>
+
+      </div>
+
+      <!-- BC/PC -->
+      <div class="premium_input_box_mg">
+
+        <select name="bc_pc" required>
+          <option value="" disabled selected></option>
+          <option>BC</option>
+          <option>PC</option>
+          <option>Both</option>
+        </select>
+
+        <label>
+          BC / PC *
+        </label>
+
+      </div>
+
+      <!-- OFFICE -->
+      <div class="premium_input_box_mg">
+
+        <select name="office_no" required>
+          <option value="" disabled selected></option>
+          <option>Office 101</option>
+          <option>Office 202</option>
+          <option>Office 303</option>
+        </select>
+
+        <label>
+          Office No. *
+        </label>
+
+      </div>
+
+      <!-- LOCATION -->
+      <div class="premium_input_box_mg">
+
+        <input type="text" name="preferred_location" required>
+
+        <label>
+          Preferred Location *
+        </label>
+
+      </div>
+
+      <!-- BUDGET -->
+      <div class="premium_input_box_mg">
+
+        <input type="text" name="budget" required>
+
+        <label>
+          Budget *
+        </label>
+
+      </div>
+
+      <!-- AMOUNT -->
+      <div class="premium_input_box_mg">
+
+        <input type="text" name="amount" required>
+
+        <label> 
+          Amount *
+        </label>
+
+      </div>
+
+      <!-- ATTEND BY -->
+      <div class="premium_input_box_mg">
+
+        <input type="text" name="attend_by" required>
+
+        <label>
+          Attend By *
+        </label>
+
+      </div>
+
+      <!-- BROKERAGE -->
+      <div class="premium_input_box_mg">
+
+        <select name="brokerage_type"  required>
+          <option value="" disabled selected></option>
+          <option>Brokerage</option>
+          <option>Direct</option>
+          <option>Both</option>
+        </select>
+
+        <label>
+          Brokerage / Direct *
+        </label>
+
+      </div>
+
+      <!-- REQUIREMENT -->
+      <div class="premium_input_box_mg premium_textarea_full_mg">
+
+        <textarea name="requirement" required></textarea>
+
+        <label>
+          Property Requirements *
+        </label>
+
+      </div>
+
+      <!-- BUTTON -->
+      <button type="submit" class="premium_submit_btn_mg">
+
+        Submit Inquiry
+
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- ===== PREMIUM PROPERTY FORM END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== SOCIAL MOVING STRIP START ===== -->
+<section class="social_main_mg">
+
+  <div class="social_container_mg">
+
+    <h2 class="social_title_mg">Connect With Us</h2>
+
+    <!-- ROW 1 -->
+    <div class="social_row_mg left_move_mg">
+      <div class="social_track_mg">
+
+        <div class="social_item_mg">Facebook</div>
+        <div class="social_item_mg">Instagram</div>
+        <div class="social_item_mg">LinkedIn</div>
+        <div class="social_item_mg">Twitter</div>
+        <div class="social_item_mg">YouTube</div>
+
+      </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="social_row_mg right_move_mg">
+      <div class="social_track_mg">
+
+        <div class="social_item_mg">Facebook</div>
+        <div class="social_item_mg">Instagram</div>
+        <div class="social_item_mg">LinkedIn</div>
+        <div class="social_item_mg">Twitter</div>
+        <div class="social_item_mg">YouTube</div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== SOCIAL MOVING STRIP END ===== -->
+
+
+
+
+
+<script>
+function initSocialSlider() {
+  const rows = document.querySelectorAll(".social_row_mg");
+
+  rows.forEach((row, index) => {
+    const track = row.querySelector(".social_track_mg");
+
+    // duplicate content for seamless loop
+    track.innerHTML += track.innerHTML;
+
+    let pos = 0;
+    const speed = 0.5 + (index * 0.3); // slight variation
+
+    function animate() {
+      if (row.classList.contains("left_move_mg")) {
+        pos -= speed;
+        if (Math.abs(pos) >= track.scrollWidth / 2) pos = 0;
+      } else {
+        pos += speed;
+        if (pos >= track.scrollWidth / 2) pos = 0;
+      }
+
+      track.style.transform = `translateX(${pos}px)`;
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  });
+}
+
+window.addEventListener("load", initSocialSlider);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== PREMIUM BOOKING FORM START ===== -->
+
+<section class="booking_form_main_mg">
+
+  <div class="booking_form_container_mg">
+
+    <!-- HEADER -->
+    <div class="booking_form_header_mg">
+
+      <span>
+        Office Booking Form
+      </span>
+
+      <h2>
+        Booking & Deal Information
+      </h2>
+
+    </div>
+
+    <!-- FORM -->
+    <form class="booking_form_grid_mg" method="POST">
+
+      {% csrf_token %}
+
+      <input type="hidden" name="form_type" value="office_booking">
+
+
+      <!-- BOOKING DATE -->
+      <div class="booking_input_box_mg">
+
+        <input type="date" name="booking_date" required>
+
+        <label>
+          Booking Date *
+        </label>
+
+      </div>
+
+      <!-- SHIFTING DATE -->
+      <div class="booking_input_box_mg">
+
+        <input type="date" name="shifting_date" required>
+
+        <label>
+          Shifting Date *
+        </label>
+
+      </div>
+
+      <!-- CLIENT NAME -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="client_name" required>
+
+        <label>
+          Client Name *
+        </label>
+
+      </div>
+
+      <!-- BC / PC -->
+      <div class="booking_input_box_mg">
+
+        <select name="bc_pc" required>
+          <option value="" disabled selected></option>
+          <option>BC</option>
+          <option>PC</option>
+          <option>Both</option>
+        </select>
+
+        <label>
+          BC / PC *
+        </label>
+
+      </div>
+
+      <!-- OFFICE -->
+      <div class="booking_input_box_mg">
+
+        <select name="office_no" required>
+          <option value="" disabled selected></option>
+          <option>Office 101</option>
+          <option>Office 202</option>
+          <option>Office 303</option>
+        </select>
+
+        <label>
+          Office No. *
+        </label>
+
+      </div>
+
+      <!-- DEAL AMOUNT -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="deal_amount" required>
+
+        <label>
+          Deal Amount *
+        </label>
+
+      </div>
+
+      <!-- TOKEN -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="token_amount" required>
+
+        <label> 
+          Token Amount *
+        </label>
+
+      </div>
+
+      <!-- SECURITY -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="security_amount" required>
+
+        <label>
+          Security Amount *
+        </label>
+
+      </div>
+
+      <!-- DEAL BY -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="deal_by" required>
+
+        <label>
+          Deal By *
+        </label>
+
+      </div>
+
+      <!-- BROKERAGE -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="brokerage" required>
+
+        <label>
+          Brokerage *
+        </label>
+
+      </div>
+
+      <!-- CABIN -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="cabin" required>
+
+        <label> 
+          Cabin *
+        </label>
+
+      </div>
+
+      <!-- WORK STATION -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="work_station" required>
+
+        <label>
+          Work Station *
+        </label>
+
+      </div>
+
+      <!-- MAINTENANCE -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="maintenance"  required>
+
+        <label>
+          Maintenance *
+        </label>
+
+      </div>
+
+      <!-- NATURE OF WORK -->
+      <div class="booking_input_box_mg">
+
+        <select name="nature_of_work" required>
+          <option value="" disabled selected></option>
+          <option>Real Estate</option>
+          <option>Consultancy</option>
+          <option>Marketing</option>
+        </select>
+
+        <label>
+          Nature Of Work *
+        </label>
+
+      </div>
+
+      <!-- GST -->
+      <div class="booking_input_box_mg">
+
+        <select name="gst" required>
+          <option value="" disabled selected></option>
+          <option>Included</option>
+          <option>Excluded</option>
+          <option>Not Applicable</option>
+        </select>
+
+        <label>
+          GST *
+        </label>
+
+      </div>
+
+      <!-- PENDING -->
+      <div class="booking_input_box_mg">
+
+        <input type="text" name="pending_amount" required>
+
+        <label>
+          Pending Amount *
+        </label>
+
+      </div>
+
+      <!-- BUTTON -->
+      <button type="submit" class="booking_submit_btn_mg">
+
+        Submit Booking Details
+
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- ===== PREMIUM BOOKING FORM END ===== -->
+
+
+{% endblock %}

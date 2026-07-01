@@ -1,0 +1,650 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Blog - INZAGIGROUP{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+{% block content %}
+
+
+<section class="about_banner_main_mg">
+
+  <div class="about_banner_container_mg">
+
+    <!-- LEFT CONTENT -->
+    <div class="about_banner_left_mg">
+
+      <h1 class="about_banner_title_mg">
+        Stories Of <br> Rescue & Care
+      </h1>
+
+      <p class="about_banner_subtitle_mg">
+        Explore inspiring rescue stories, animal care awareness, feeding initiatives, and shelter support programs focused on protecting stray and injured dogs.
+      </p>
+
+      <div class="about_banner_buttons_mg">
+        <a href="#" class="about_btn_primary_mg">Explore Stories →</a>
+        <a href="#" class="about_btn_outline_mg" onclick="openPopupMg()">Support The Cause</a>
+      </div>
+
+      <div class="about_banner_badges_mg">
+        <span>Dog Rescue Stories</span>
+        <span>Animal Care Awareness</span>
+        <span>Rescue & Shelter Support</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== FEATURED BLOG START ===== -->
+<section class="featured_blog_main_mg" id="featured-article">
+
+  <div class="featured_blog_container_mg">
+
+    <!-- HEADER -->
+    <div class="featured_blog_header_mg">
+
+      <span>Featured Article</span>
+
+      <h2>
+        Rescue Stories, Awareness & Dog Care Insights
+      </h2>
+
+      <p>
+        Read inspiring rescue stories, dog care guides, and awareness articles focused on protecting stray and injured dogs.
+      </p>
+
+    </div>
+
+    <!-- FEATURED CARD -->
+    <div class="featured_blog_card_mg">
+
+      <!-- IMAGE -->
+      <div class="featured_blog_img_mg">
+
+        <img src="{% static 'images/animal_recieve.png' %}"
+          alt="Featured Blog">
+
+      </div>
+
+      <!-- CONTENT -->
+      <div class="featured_blog_content_mg">
+
+        <!-- CATEGORY -->
+        <span class="featured_blog_category_mg">
+          Animal Rescue & Welfare
+        </span>
+
+        <!-- TITLE -->
+        <h3>
+          How Rescue Initiatives Are Transforming The Lives Of Stray Dogs
+        </h3>
+
+        <!-- DESCRIPTION -->
+        <p>
+          Discover how rescue operations, shelter care, feeding drives, and compassionate volunteers are helping stray dogs live safer and healthier lives.
+        </p>
+
+        <!-- META -->
+        <div class="featured_blog_meta_mg">
+
+          <div class="featured_blog_author_mg">
+
+            
+
+            <div>
+              <h4>Ananya Sharma</h4>
+              <span>Dog Rescue Volunteer</span>
+            </div>
+
+          </div>
+
+          <div class="featured_blog_date_mg">
+            July 2026
+          </div>
+
+        </div>
+
+        <!-- BUTTON -->
+        <a href="#" class="featured_blog_btn_mg">
+          Read Article
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== FEATURED BLOG END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== LATEST ARTICLES START ===== -->
+<section class="latest_blog_main_mg" id="latest-articles">
+
+  <div class="latest_blog_container_mg">
+
+    <!-- HEADER -->
+    <div class="latest_blog_header_mg">
+
+      <span>Latest Articles</span>
+
+      <h2>
+        Explore Rescue Stories & Dog Care Awareness
+      </h2>
+
+      <p>
+        Discover rescue stories, dog care awareness, adoption guidance, and initiatives helping stray dogs live safer lives.
+      </p>
+
+    </div>
+
+    <!-- ARTICLES GRID -->
+    <div class="latest_blog_grid_mg">
+
+      <!-- CARD -->
+      <article class="latest_blog_card_mg">
+
+        <!-- IMAGE -->
+        <div class="latest_blog_img_mg">
+          <img src="{% static 'images/Dog Rescue.png' %}"
+            alt="Real Estate">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="latest_blog_content_mg">
+
+          <span class="latest_blog_category_mg">
+            Dog Rescue
+          </span>
+
+          <h3>
+            Rescuing Injured Stray Dogs Through Community Support
+          </h3>
+
+          <p>
+            Learn how volunteers and local communities help injured stray dogs receive shelter, food, and medical support.
+
+          <a href="#">
+            Read More
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- CARD -->
+      <article class="latest_blog_card_mg">
+
+        <div class="latest_blog_img_mg">
+          <img src="{% static 'images/Animal Care.png' %}"
+            alt="HR">
+        </div>
+
+        <div class="latest_blog_content_mg">
+
+          <span class="latest_blog_category_mg">
+            Animal Care
+          </span>
+
+          <h3>
+            Essential Care Tips For Stray & Rescued Dogs
+          </h3>
+
+          <p>
+            Simple ways to provide food, hydration, and proper care for homeless and rescued dogs in your community.
+          </p>
+
+          <a href="#">
+            Read More
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- CARD -->
+      <article class="latest_blog_card_mg">
+
+        <div class="latest_blog_img_mg">
+          <img src="{% static 'images/Adoption.png' %}"
+            alt="Legal">
+        </div>
+
+        <div class="latest_blog_content_mg">
+
+          <span class="latest_blog_category_mg">
+            Adoption
+          </span>
+
+          <h3>
+            Why Dog Adoption Can Change Animal Lives Forever
+          </h3>
+
+          <p>
+            Understand how adoption gives rescued dogs a safer life,
+            better care, and long-term support from loving families.
+          </p>
+
+          <a href="#">
+            Read More
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- CARD -->
+      <article class="latest_blog_card_mg">
+
+        <div class="latest_blog_img_mg">
+          <img src="{% static 'images/Awareness.png' %}"
+            alt="Awareness">
+        </div>
+
+        <div class="latest_blog_content_mg">
+
+          <span class="latest_blog_category_mg">
+            Awareness
+          </span>
+
+          <h3>
+            How Awareness Drives Help Protect Stray Dogs
+          </h3>
+
+          <p>
+            Learn how awareness campaigns encourage communities to
+            support animal rescue, feeding, and responsible care.
+          </p>
+
+          <a href="#">
+            Read More
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- CARD -->
+      <article class="latest_blog_card_mg">
+
+        <div class="latest_blog_img_mg">
+          <img src="{% static 'images/Shelter Care.png' %}"
+            alt=" Shelter Care">
+        </div>
+
+        <div class="latest_blog_content_mg">
+
+          <span class="latest_blog_category_mg">
+            Shelter Care
+          </span>
+
+          <h3>
+            Providing Safe Shelter For Injured & Rescued Dogs
+          </h3>
+
+          <p>
+            Discover how shelter care programs provide safety,
+            recovery support, and protection for rescued dogs.
+          </p>
+
+          <a href="#">
+            Read More
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== LATEST ARTICLES END ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== TRENDING BLOG START ===== -->
+<section class="trending_blog_main_mg" id="trending-insights">
+
+  <div class="trending_blog_container_mg">
+
+    <!-- HEADER -->
+    <div class="trending_blog_header_mg">
+
+      <span>Trending Insights</span>
+
+      <h2>
+        Popular Rescue Stories & Animal Care Insights
+      </h2>
+
+      <p>
+        Explore trending rescue stories, dog care awareness, and insights
+        supporting animal protection and welfare initiatives.
+      </p>
+
+    </div>
+
+    <!-- SLIDER -->
+    <div class="trending_blog_slider_wrapper_mg">
+
+      <!-- BUTTON -->
+      <button class="trending_btn_mg left_mg">
+        &#10094;
+      </button>
+
+      <!-- SLIDER -->
+      <div class="trending_blog_slider_mg">
+
+        <!-- CARD -->
+        <article class="trending_blog_card_mg">
+
+          <div class="trending_blog_img_mg">
+            <img src="{% static 'images/Dog-Rescue.png' %}"
+              alt="Dog-Rescue">
+          </div>
+
+          <div class="trending_blog_content_mg">
+
+            <span class="trending_category_mg">
+              Dog Rescue
+            </span>
+
+            <h3>
+              How Rescue Teams Are Saving Injured Stray Dogs
+            </h3>
+
+            <div class="trending_meta_mg">
+              <span>8 min read</span>
+              <span>Trending</span>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- CARD -->
+        <article class="trending_blog_card_mg">
+
+          <div class="trending_blog_img_mg">
+            <img src="{% static 'images/Shelter-Care.png' %}"
+              alt="Shelter Care">
+          </div>
+
+          <div class="trending_blog_content_mg">
+
+            <span class="trending_category_mg">
+              Shelter Care
+            </span>
+
+            <h3>
+              Providing Safe Shelter & Recovery Support For Rescued Dogs
+            </h3>
+
+            <div class="trending_meta_mg">
+              <span>6 min read</span>
+              <span>Popular</span>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- CARD -->
+        <article class="trending_blog_card_mg">
+
+          <div class="trending_blog_img_mg">
+            <img src="{% static 'images/Awarenesss.png' %}"
+              alt="Awareness">
+          </div>
+
+          <div class="trending_blog_content_mg">
+
+            <span class="trending_category_mg">
+              Awareness
+            </span>
+
+            <h3>
+              How Awareness Campaigns Help Protect Stray Animals
+            </h3>
+
+            <div class="trending_meta_mg">
+              <span>7 min read</span>
+              <span>Trending</span>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- CARD -->
+        <article class="trending_blog_card_mg">
+
+          <div class="trending_blog_img_mg">
+            <img src="{% static 'images/Animal Care (2).png' %}"
+              alt="Animal Care">
+          </div>
+
+          <div class="trending_blog_content_mg">
+
+            <span class="trending_category_mg">
+              Animal Care
+            </span>
+
+            <h3>
+              Essential Care Tips For Injured & Rescued Dogs
+            </h3>
+
+            <div class="trending_meta_mg">
+              <span>5 min read</span>
+              <span>Popular</span>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <!-- BUTTON -->
+      <button class="trending_btn_mg right_mg">
+        &#10095;
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== TRENDING BLOG END ===== -->
+
+<script>
+
+function initTrendingSliderMg() {
+
+  const wrappers = document.querySelectorAll(".trending_blog_slider_wrapper_mg");
+
+  wrappers.forEach(wrapper => {
+
+    const slider = wrapper.querySelector(".trending_blog_slider_mg");
+    const prev = wrapper.querySelector(".left_mg");
+    const next = wrapper.querySelector(".right_mg");
+
+    if (!slider) return;
+
+    function getScrollAmount() {
+
+      const card = slider.querySelector(".trending_blog_card_mg");
+
+      if (!card) return 380;
+
+      const style = getComputedStyle(slider);
+
+      const gap = parseInt(style.gap || 28);
+
+      return card.offsetWidth + gap;
+
+    }
+
+    function updateButtons() {
+
+      const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+      if (slider.scrollLeft <= 1) {
+        prev.style.display = "none";
+      } else {
+        prev.style.display = "flex";
+      }
+
+      if (slider.scrollLeft >= maxScroll - 1) {
+        next.style.display = "none";
+      } else {
+        next.style.display = "flex";
+      }
+
+    }
+
+    next.addEventListener("click", () => {
+
+      slider.scrollBy({
+        left: getScrollAmount(),
+        behavior: "smooth"
+      });
+
+    });
+
+    prev.addEventListener("click", () => {
+
+      slider.scrollBy({
+        left: -getScrollAmount(),
+        behavior: "smooth"
+      });
+
+    });
+
+    slider.addEventListener("scroll", updateButtons);
+
+    requestAnimationFrame(() => {
+      updateButtons();
+    });
+
+  });
+
+}
+
+window.addEventListener("DOMContentLoaded", initTrendingSliderMg);
+
+</script>
+{% endblock %}

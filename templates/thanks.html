@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/thanks.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- ===== PREMIUM THANK YOU PAGE START ===== -->
+
+<section class="thanks_page_main_mg">
+
+  <!-- BACKGROUND GLOW -->
+  <div class="thanks_glow_1_mg"></div>
+  <div class="thanks_glow_2_mg"></div>
+
+  <div class="thanks_page_container_mg">
+
+    <!-- CARD -->
+    <div class="thanks_card_mg">
+
+      <!-- ICON -->
+      <div class="thanks_icon_wrap_mg">
+
+        <div class="thanks_icon_mg">
+          ✓
+        </div>
+
+      </div>
+
+      <!-- CONTENT -->
+      <span class="thanks_tag_mg">
+        Submission Successful
+      </span>
+
+      <h1>
+        Thank You!
+      </h1>
+
+      <p>
+        Your request has been submitted successfully.
+        Our team will review your details and get in touch with you shortly.
+      </p>
+
+      <!-- TIMER -->
+      <div class="thanks_timer_mg">
+
+        Redirecting back in
+        <span id="thanksCounterMg">10</span>
+        seconds...
+
+      </div>
+
+      <!-- BUTTON -->
+      <button class="thanks_btn_mg" onclick="goBackMg()">
+
+        Go Back Now
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===== PREMIUM THANK YOU PAGE END ===== -->
+
+
+
+
+
+
+
+
+
+
+<script>
+
+/* ===== BACK FUNCTION ===== */
+
+function goBackMg(){
+
+  if(document.referrer){
+    window.location.href = document.referrer;
+  }
+  else{
+    window.history.back();
+  }
+
+}
+
+/* ===== AUTO REDIRECT ===== */
+
+let thanksTimeMg = 10;
+
+const thanksCounterMg =
+document.getElementById("thanksCounterMg");
+
+const thanksIntervalMg = setInterval(() => {
+
+  thanksTimeMg--;
+
+  if(thanksCounterMg){
+    thanksCounterMg.innerText = thanksTimeMg;
+  }
+
+  if(thanksTimeMg <= 0){
+
+    clearInterval(thanksIntervalMg);
+
+    goBackMg();
+
+  }
+
+}, 1000);
+
+</script>
+
+
+{% endblock %}

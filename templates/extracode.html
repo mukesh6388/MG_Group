@@ -1,0 +1,282 @@
+
+
+<!-- ===== LEADERSHIP SECTION START ===== -->
+<section id="leadership" class="leadership_main_mg">
+  <div class="leadership_container_mg">
+    <!-- ===== FOUNDER MESSAGE ===== -->
+    <div class="founder_block_mg">
+      <div class="founder_image_mg">
+        <img
+          src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+          alt="Founder"
+        />
+      </div>
+
+      <div class="founder_content_mg">
+        <h2>Founder’s Message</h2>
+        <p class="founder_highlight_mg">
+          “Our vision is to build a unified platform that connects industries,
+          creates opportunities, and delivers real long-term value.”
+        </p>
+
+        <p class="founder_desc_mg">
+          We started with a clear goal — to bring multiple industries under one
+          strong ecosystem. Today, we are growing across real estate, HR
+          consultancy, legal services, and job platforms, with a strong focus on
+          trust, execution, and sustainable growth.
+        </p>
+
+        <p class="founder_desc_mg">
+          Our approach is built on understanding real business challenges and
+          delivering practical solutions. We focus on creating systems that
+          simplify operations, improve efficiency, and support long-term growth.
+        </p>
+
+        <p class="founder_desc_mg">
+          We believe in building long-term relationships with our clients by
+          delivering consistent value. Our goal is not just growth, but creating
+          a reliable and scalable business ecosystem.
+        </p>
+
+        <div class="founder_name_mg">
+          <strong>Ashish Mittal</strong>
+          <span>Founder & CEO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== LEADERSHIP TEAM ===== -->
+    <div class="team_grid_mg">
+      <div class="team_card_mg">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" />
+        <h3>Mohan Sharma</h3>
+        <span>Director – HR Services</span>
+        <p>
+          Leading recruitment and talent strategies for growing organizations.
+        </p>
+      </div>
+
+      <div class="team_card_mg">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" />
+        <h3>Kajal Singh</h3>
+        <span>Head – Legal Advisory</span>
+        <p>
+          Expert in legal compliance, documentation, and advisory solutions.
+        </p>
+      </div>
+
+      <div class="team_card_mg">
+        <img src="https://randomuser.me/api/portraits/men/50.jpg" />
+        <h3>Vikram Kumar</h3>
+        <span>Operations Head</span>
+        <p>
+          Managing multi-industry operations with strong efficiency and
+          precision.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== LEADERSHIP SECTION END ===== -->
+
+
+
+
+
+
+
+
+
+/* ===== LEADERSHIP SECTION START ===== */
+
+.leadership_main_mg {
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+/* Container */
+.leadership_container_mg {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ===== FOUNDER BLOCK ===== */
+.founder_block_mg {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 50px;
+  align-items: center;
+
+  margin-bottom: 100px;
+}
+
+/* Image */
+.founder_image_mg img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+/* Content */
+.founder_content_mg h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.founder_highlight_mg {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.founder_desc_mg {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Name */
+.founder_name_mg strong {
+  display: block;
+  font-size: 16px;
+  color: #111827;
+}
+
+.founder_name_mg span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ===== TEAM GRID ===== */
+.team_grid_mg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.team_card_mg {
+  text-align: center;
+  padding: 30px 20px;
+
+  border-radius: 18px;
+  background: #ffffff;
+
+  border: 1px solid #eee;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+
+  transition: 0.3s;
+}
+
+/* Image */
+.team_card_mg img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Name */
+.team_card_mg h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+/* Role */
+.team_card_mg span {
+  font-size: 13px;
+  color: #2563eb;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Bio */
+.team_card_mg p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Hover */
+.team_card_mg:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .founder_block_mg {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .founder_image_mg img {
+    height: 320px;
+  }
+
+  .team_grid_mg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team_grid_mg {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== LEADERSHIP SECTION END ===== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

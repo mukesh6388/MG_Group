@@ -1,0 +1,255 @@
+/* ===============================
+   ABOUT SHORT SECTION
+=================================*/
+.about_short_main_mg {
+  background: #ffffff;
+  padding: 50px 0;
+}
+
+/* Container */
+.about_short_container_mg {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT */
+.about_short_left_mg {
+  flex: 1;
+}
+
+/* TITLE */
+.about_short_title_mg {
+  font-size: 38px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+/* DESC */
+.about_short_desc_mg {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.about_short_btn_mg {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: #111827;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.about_short_btn_mg:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+/* RIGHT IMAGE */
+.about_short_right_mg {
+  flex: 1;
+}
+
+.about_short_right_mg img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+@media (max-width: 992px) {
+  .about_short_container_mg {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about_short_title_mg {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== OUR COMPANIES SECTION START ===== */
+
+.companies_main_mg {
+  background: #ffffff;
+  padding: 50px 0;
+}
+
+/* Container */
+.companies_container_mg {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.companies_header_mg {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.companies_title_mg {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.companies_subtitle_mg {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Grid */
+.companies_grid_mg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.company_card_mg {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Image */
+.company_card_mg img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.company_card_mg h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.company_card_mg p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Link */
+.company_card_mg a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.company_card_mg a:hover {
+  text-decoration: underline;
+}
+
+/* Hover Effect (Premium subtle lift) */
+.company_card_mg:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  border-color: transparent;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .companies_grid_mg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .companies_grid_mg {
+    grid-template-columns: 1fr;
+  }
+
+  .companies_title_mg {
+    font-size: 28px;
+  }
+}
+
+/* ===== OUR COMPANIES SECTION END ===== */
+
+
+
+
+
+
+
+
+

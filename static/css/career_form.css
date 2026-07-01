@@ -1,0 +1,453 @@
+/* ===== ULTRA PREMIUM CAREER FORM START ===== */
+
+.elite_career_apply_main_mg{
+  position:relative;
+
+  padding:20px 0;
+
+  overflow:hidden;
+
+  background:
+  radial-gradient(circle at top left, rgba(99,102,241,0.12), transparent 28%),
+  radial-gradient(circle at bottom right, rgba(79,70,229,0.10), transparent 30%),
+  linear-gradient(
+    180deg,
+    #f8fafc,
+    #f1f5f9
+  );
+}
+
+/* BLUR */
+.elite_blur_1_mg,
+.elite_blur_2_mg{
+  position:absolute;
+
+  border-radius:50%;
+
+  filter:blur(120px);
+
+  z-index:0;
+}
+
+.elite_blur_1_mg{
+  width:380px;
+  height:380px;
+
+  background:rgba(99,102,241,0.14);
+
+  top:-120px;
+  left:-120px;
+}
+
+.elite_blur_2_mg{
+  width:400px;
+  height:400px;
+
+  background:rgba(79,70,229,0.12);
+
+  right:-120px;
+  bottom:-150px;
+}
+
+/* CONTAINER */
+.elite_career_container_mg{
+  position:relative;
+  z-index:2;
+
+  max-width:1050px;
+  margin:auto;
+
+  padding:0 20px;
+}
+
+/* CARD */
+.elite_career_card_mg{
+  position:relative;
+
+  padding:34px;
+
+  border-radius:36px;
+
+  background:
+  linear-gradient(
+    180deg,
+    rgba(255,255,255,0.82),
+    rgba(255,255,255,0.72)
+  );
+
+  backdrop-filter:blur(18px);
+
+  border:1px solid rgba(255,255,255,0.55);
+
+  overflow:hidden;
+
+  box-shadow:
+  0 30px 80px rgba(15,23,42,0.08),
+  0 10px 30px rgba(15,23,42,0.04);
+}
+
+/* LIGHT LINE */
+.elite_career_card_mg::before{
+  content:"";
+
+  position:absolute;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:1px;
+
+  background:
+  linear-gradient(
+    90deg,
+    transparent,
+    rgba(99,102,241,0.45),
+    transparent
+  );
+}
+
+/* ===== TOP ===== */
+
+.elite_career_top_mg{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+
+  gap:25px;
+
+  margin-bottom:30px;
+}
+
+/* TAG */
+.elite_career_title_mg span{
+  display:inline-flex;
+
+  padding:8px 15px;
+
+  border-radius:50px;
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(79,70,229,0.10),
+    rgba(99,102,241,0.08)
+  );
+
+  border:1px solid rgba(99,102,241,0.14);
+
+  color:#4338ca;
+
+  font-size:10px;
+  font-weight:700;
+
+  letter-spacing:1.4px;
+
+  margin-bottom:18px;
+}
+
+/* TITLE */
+.elite_career_title_mg h2{
+  font-size:48px;
+  line-height:1;
+
+  font-weight:850;
+
+  letter-spacing:-2px;
+
+  color:#0f172a;
+
+  margin-bottom:10px;
+}
+
+/* TEXT */
+.elite_career_title_mg p{
+  font-size:14px;
+
+  color:#64748b;
+}
+
+/* BADGE */
+.elite_job_badge_mg{
+  height:52px;
+
+  padding:0 22px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:18px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #111827,
+    #1e293b
+  );
+
+  color:#ffffff;
+
+  font-size:14px;
+  font-weight:600;
+
+  box-shadow:
+  0 18px 35px rgba(15,23,42,0.16);
+}
+
+/* ===== FORM ===== */
+
+.elite_career_form_mg{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:16px;
+}
+
+/* INPUT */
+.elite_input_box_mg{
+  position:relative;
+}
+
+/* FIELDS */
+.elite_input_box_mg input,
+.elite_input_box_mg select,
+.elite_input_box_mg textarea{
+  width:100%;
+
+  height:54px;
+
+  border:none;
+
+  border-radius:20px;
+
+  background:
+  rgba(255,255,255,0.72);
+
+  backdrop-filter:blur(10px);
+
+  padding:0 18px;
+
+  font-size:13px;
+  font-weight:500;
+
+  color:#0f172a;
+
+  outline:none;
+
+  transition:0.28s ease;
+
+  box-shadow:
+  inset 0 0 0 1px rgba(226,232,240,0.9);
+}
+
+/* TEXTAREA */
+.elite_input_box_mg textarea{
+  height:100px;
+
+  resize:none;
+
+  padding-top:18px;
+}
+
+/* HOVER */
+.elite_input_box_mg input:hover,
+.elite_input_box_mg select:hover,
+.elite_input_box_mg textarea:hover{
+  transform:translateY(-1px);
+
+  box-shadow:
+  inset 0 0 0 1px rgba(99,102,241,0.25),
+  0 10px 20px rgba(15,23,42,0.04);
+}
+
+/* FOCUS */
+.elite_input_box_mg input:focus,
+.elite_input_box_mg select:focus,
+.elite_input_box_mg textarea:focus{
+  box-shadow:
+  inset 0 0 0 1px rgba(99,102,241,0.5),
+  0 0 0 4px rgba(99,102,241,0.08),
+  0 14px 30px rgba(99,102,241,0.08);
+}
+
+/* LABEL */
+.elite_input_box_mg label{
+  position:absolute;
+
+  left:16px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  background:#ffffff;
+
+  padding:0 7px;
+
+  border-radius:10px;
+
+  font-size:11px;
+  font-weight:500;
+
+  color:#64748b;
+
+  pointer-events:none;
+
+  transition:0.22s ease;
+}
+
+/* TEXTAREA LABEL */
+.elite_input_box_mg textarea + label{
+  top:16px;
+  transform:none;
+}
+
+/* FLOAT */
+.elite_input_box_mg input:focus + label,
+.elite_input_box_mg input:valid + label,
+.elite_input_box_mg select:focus + label,
+.elite_input_box_mg select:valid + label,
+.elite_input_box_mg textarea:focus + label,
+.elite_input_box_mg textarea:valid + label{
+  top:-8px;
+
+  transform:none;
+
+  font-size:9px;
+  font-weight:700;
+
+  color:#4f46e5;
+}
+
+/* FULL */
+.elite_full_mg{
+  grid-column:1 / -1;
+}
+
+/* RESUME */
+.elite_resume_box_mg{
+  grid-column:1 / 3;
+}
+
+/* LABEL */
+.elite_resume_box_mg label{
+  height:54px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:0 20px;
+
+  border-radius:20px;
+
+  background:
+  rgba(255,255,255,0.72);
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:
+  inset 0 0 0 1px rgba(226,232,240,0.9);
+
+  cursor:pointer;
+
+  font-size:13px;
+  font-weight:600;
+
+  color:#0f172a;
+
+  transition:0.3s ease;
+}
+
+/* HOVER */
+.elite_resume_box_mg label:hover{
+  transform:translateY(-1px);
+
+  box-shadow:
+  inset 0 0 0 1px rgba(99,102,241,0.35),
+  0 10px 20px rgba(15,23,42,0.05);
+}
+
+/* FILE */
+.elite_resume_box_mg input{
+  font-size:11px;
+}
+
+/* BUTTON */
+.elite_submit_btn_mg{
+  height:54px;
+
+  border:none;
+
+  border-radius:20px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #111827,
+    #1e293b
+  );
+
+  color:#ffffff;
+
+  font-size:13px;
+  font-weight:700;
+
+  letter-spacing:0.3px;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+
+  box-shadow:
+  0 18px 35px rgba(15,23,42,0.14);
+}
+
+/* HOVER */
+.elite_submit_btn_mg:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+  0 22px 45px rgba(15,23,42,0.18);
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+
+  .elite_career_form_mg{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:768px){
+
+  .elite_career_apply_main_mg{
+    padding:70px 0;
+  }
+
+  .elite_career_card_mg{
+    padding:22px;
+
+    border-radius:26px;
+  }
+
+  .elite_career_top_mg{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .elite_career_title_mg h2{
+    font-size:34px;
+  }
+
+  .elite_career_form_mg{
+    grid-template-columns:1fr;
+  }
+
+  .elite_resume_box_mg{
+    grid-column:1 / -1;
+  }
+
+}
+
+/* ===== ULTRA PREMIUM CAREER FORM END ===== */
