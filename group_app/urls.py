@@ -27,3 +27,5 @@ urlpatterns = [
 
     path('api/jobs/', views.jobs_api, name='jobs_api'),
 ]
+
+

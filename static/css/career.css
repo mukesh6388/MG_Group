@@ -848,6 +848,8 @@
   padding: 18px;
   border-radius: 16px;
 
+  height: 360px;   
+
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
 
@@ -930,9 +932,16 @@
 /* ===== DESCRIPTION ===== */
 
 .job_card_mg p {
-  font-size: 13.5px;
-  color: #475569;
-  line-height: 1.5;
+    font-size: 13.5px;
+    color: #475569;
+    line-height: 1.5;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;     /* Kitni lines dikhani hain */
+    -webkit-box-orient: vertical;
+
+    flex: 1;
 }
 
 /* ===== FOOTER ===== */
